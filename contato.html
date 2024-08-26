@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Vistos para a Indonésia</title>
+
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #ff0000;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    main {
+        padding: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .info-vistos,
+    .documentos,
+    .contato,
+    .endereco {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 1rem; */
+        margin: 0 100px;
+    }
+
+    .card {
+        background-color: #ff00008d;
+        border: 2px solid #ff0000;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 20px 100px;
+        flex: 1 1 200px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label {
+        margin-top: 0.5rem;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form button {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    form button:hover {
+        background-color: #ff00007e;
+    }
+
+    header {
+        background-color: #ff0000;
+        padding: 10px 80px 10px 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .documentos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sobre {
+        position: relative;
+    }
+
+    .sobre a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+    }
+
+    .aparece {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        min-width: 120px;
+        z-index: 10;
+        margin-right: 5px;
+    }
+
+    ul {
+        list-style-type: circle;
+
+    }
+
+    .aparece a {
+        color: #333;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .aparece a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .sobre:hover .aparece {
+        display: block;
+    }
+
+    .lado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .contato,
+    .documentos {
+        height: 550px;
+        width: 300px;
+        margin: 0 25px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .info-vistos {
+        height: 900px;
+        width: 700px;
+
+
+    }
+
+    footer {
+        background-color: #ff0000;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        bottom: 0;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="assets/brasao.png" alt="logo">
+        </div>
+        <nav class="header-nav">
+            <div class="sobre">
+                <a href="index.html">Sobre a Indonésia</a>
+                <div class="aparece">
+                    <a href="geografia.html">Geografia</a>
+                    <a href="historia.html">História</a>
+             
+                </div>
+            </div>
+        
+            <div class="sobre">
+                <a href="#tourism">Turismo</a>
+                <div class="aparece">
+                    <a href="regiao.html">Regiões</a>
+                    <a href="inform.html">Informações</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="info-vistos">
+            <h2>Informações sobre Vistos</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Visto de Turismo</h3>
+                    <p><strong>Duração:</strong> Até 30 dias</p>
+                    <p><strong>Objetivo:</strong> Turismo, lazer e visita a amigos ou familiares</p>
+                </div>
+                <div class="card">
+                    <h3>Visto de Negócios</h3>
+                    <p><strong>Duração:</strong> Até 60 dias</p>
+                    <p><strong>Objetivo:</strong> Reuniões de negócios, negociações e eventos comerciais</p>
+                </div>
+                <div class="card">
+                    <h3>Visto de Trabalho</h3>
+                    <p><strong>Duração:</strong> Variável</p>
+                    <p><strong>Objetivo:</strong> Trabalho temporário ou permanente</p>
+                </div>
+                <div class="card">
+                    <h3>Visto de Estudos</h3>
+                    <p><strong>Duração:</strong> Até 1 ano</p>
+                    <p><strong>Objetivo:</strong> Estudos em instituições educacionais</p>
+                </div>
+            </div>
+        </section>
+        <div class="lado">
+            <section class="documentos">
+                <h2>Documentos Necessários</h2>
+                <ul>
+                    <li>Passaporte válido por pelo menos 6 meses</li>
+                    <li>Formulário de Solicitação de Visto preenchido</li>
+                    <li>Fotos Recentes (conforme especificações)</li>
+                    <li>Comprovante de Pagamento da taxa de visto</li>
+                    <li>Carta de Convite (se aplicável)</li>
+                    <li>Documentos Adicionais (conforme tipo de visto)</li>
+                </ul>
+                <img class="logo" src="assets/brasao.png" alt="brasao">
+            </section>
+
+
+
+            <section class="contato">
+                <h2>Formulário de Contato</h2>
+                <form>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="informacoes_visto">Informações sobre Visto</option>
+                        <option value="documentos_necessarios">Documentos Necessários</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+
+        <p>&copy; 2024 Consulado da Indonésia. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

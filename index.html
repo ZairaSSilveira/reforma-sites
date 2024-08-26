@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+
+  header {
+    background-color: #ff0000;
+    padding: 10px 80px 10px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .header-nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .sobre {
+    position: relative;
+  }
+
+  .sobre a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+  }
+
+  .aparece {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    z-index: 10;
+    margin-right: 5px;
+  }
+
+  .aparece a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .aparece a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .sobre:hover .aparece {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .guardar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .informacoes {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .informacoes p {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  strong {
+    color: #ff0000;
+    font-size: 30px;
+  }
+
+  .zona {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .mapa {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .equipe {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+  }
+
+  .membro {
+    text-align: center;
+    max-width: 120px;
+  }
+
+  .membro img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .membro h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .membro p {
+    color: #333;
+    font-size: 14px;
+  }
+
+  footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+  }
+</style>
+
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="assets/brasao.png" alt="logo">
+    </div>
+    <nav class="header-nav">
+      <div class="sobre">
+        <a href="index.html">Sobre a Indonésia</a>
+        <div class="aparece">
+          <a href="geografia.html">Geografia</a>
+          <a href="historia.html">História</a>
+
+        </div>
+      </div>
+      <div class="sobre">
+        <a href="#visa-info">Informações de Visto</a>
+        <div class="aparece">
+          <a href="#">Saber Mais</a>
+        </div>
+      </div>
+      <div class="sobre">
+        <a href="#tourism">Turismo</a>
+        <div class="aparece">
+          <a href="regiao.html">Regiões</a>
+          <a href="inform.html">Informações</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="informacoes">
+    <p class="grande">
+    <div class="esquerda"> CONSULADO DA</div> <br> <strong>REPÚBLICA DA INDONÉSIA</strong> <br>
+    <div class="grande"> <br> PARA A REPÚBLICA DA ARMÊNIA</div>
+    </p>
+  </div>
+  </div>
+  <div class="zona">
+    <div class="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3963.3928273588062!2d106.79489167480655!3d-6.598004593395797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzUnNTIuMCJTIDEwNsKwNDcnNTAuOSJF!5e0!3m2!1spt-BR!2sbr!4v1722448999723!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="equipe">
+      <div class="membro">
+        <img src="assets/presidente.jpg" alt="Presidente">
+        <h3>Presidente</h3>
+      </div>
+      <div class="membro">
+        <img src="assets/vice presidente.jpg" alt="Vice-Presidente">
+        <h3>Vice-Presidente</h3>
+      </div>
+      <div class="membro">
+        <img src="assets/consul.jpg" alt="Consultor">
+        <h3>Consultor</h3>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+
+    <p>&copy; 2024 Consulado da Indonésia. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>

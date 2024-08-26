@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações para Viajantes na Indonésia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset básico */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+
+    header {
+        background-color: #ff0000;
+        padding: 10px 20px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-logo img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    .header-nav {
+        display: flex;
+        gap: 20px;
+    }
+
+    .sobre {
+        position: relative;
+    }
+
+    .sobre a {
+        text-decoration: none;
+        color: #fff;
+        
+        padding: 10px;
+        display: block;
+    }
+
+    .aparece {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        min-width: 120px;
+        z-index: 10;
+    }
+
+    .aparece a {
+        color: #333;
+        text-decoration: none;
+        padding: 8px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .aparece a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .sobre:hover .aparece {
+        display: block;
+    }
+
+    main {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card-grid {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        height: 300px;
+        width: 300px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    footer {
+        background-color: #ff0000;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        bottom: 0;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="assets/brasao.png" alt="logo">
+        </div>
+        <nav class="header-nav">
+            <div class="sobre">
+                <a href="index.html">Sobre a Indonésia</a>
+                <div class="aparece">
+                    <a href="geografia.html">Geografia</a>
+                </div>
+            </div>
+            <div class="sobre">
+                <a href="#visa-info">Informações de Visto</a>
+                <div class="aparece">
+                    <a href="contato.html">Saber Mais</a>
+                </div>
+            </div>
+            <div class="sobre">
+                <a href="#tourism">Turismo</a>
+                <div class="aparece">
+                    <a href="regiao.html">Regiões</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       
+        <div class="card-grid">
+            <div class="card" id="taxa-aeroportuaria">
+                <h3>Taxa Aeroportuária</h3>
+                <p>Taxa de Rp. 100.000 para viagens internacionais e Rp. 15.000 a Rp. 30.000 para viagens internas.
+                    Autorização de saída necessária para estadias superiores a seis meses.</p>
+            </div>
+
+            <div class="card" id="alfandega">
+                <h3>Alfândega</h3>
+                <p>Permite 2 litros de bebidas alcoólicas, 200 cigarros ou 50 charutos, e uma quantidade razoável de
+                    perfume. Proibidos narcóticos, armas, pornografia, materiais chineses e medicamentos chineses.
+                    Frutas, plantas e animais requerem licenças. Moeda indonésia acima de Rp.50.000 é proibida na
+                    exportação/importação.</p>
+            </div>
+
+            <div class="card" id="bancos-cambio-cheques">
+                <h3>Bancos e Câmbio</h3>
+                <p>Bancos operam das 8h00 às 14h30, e alguns têm horários estendidos. Cambistas estão em cidades e
+                    aeroportos. Cartões de crédito são aceitos em locais principais. Cheques de viagem podem ser
+                    trocados em grandes cidades e hotéis.</p>
+            </div>
+
+            <div class="card" id="gorjeta">
+                <h3>Gorjeta</h3>
+                <p>Tradicionalmente voluntária, mas pode ser vista como obrigatória em alguns lugares. O valor da
+                    gorjeta é ao critério do visitante.</p>
+            </div>
+
+            <div class="card" id="compras">
+                <h3>Compras</h3>
+                <p>Lojas abrem de 9h às 21h em grandes cidades e podem fechar entre 13h e 17h em cidades menores.
+                    Barganhar é comum em mercados. Principais mercados incluem Pasar Blok-M e Jalan Surabaya.</p>
+            </div>
+
+            <div class="card" id="lembrancas">
+                <h3>Lembranças</h3>
+                <p>Artesanatos variados, incluindo batik, esculturas, e pedras semipreciosas, estão disponíveis em lojas
+                    e shopping centers.</p>
+            </div>
+
+            <div class="card" id="vestuario">
+                <h3>Vestuário</h3>
+                <p>Trajes modernos são comuns. Para homens, camisas e calças são adequadas, enquanto mulheres podem usar
+                    vestidos e blusas. Roupas leves são recomendadas devido ao clima quente.</p>
+            </div>
+
+            <div class="card" id="cozinha">
+                <h3>Cozinha</h3>
+                <p>Pratos principais incluem arroz frito ("nasi goreng") e carne grelhada ("sate"). Frutas tropicais e
+                    frutos do mar são comuns. Bebidas incluem sucos de frutas e café. Restaurantes internacionais estão
+                    disponíveis.</p>
+            </div>
+
+            <div class="card" id="saude">
+                <h3>Serviços de Saúde</h3>
+                <p>Médicos estão disponíveis em quase todas as cidades, e grandes hotéis têm médicos de plantão.</p>
+            </div>
+
+            <div class="card" id="assistencia-policial">
+                <h3>Assistência Policial</h3>
+                <p>Polícia disponível 24 horas para ajudar. Número para emergências é 110 ou 510-110.</p>
+            </div>
+
+            <div class="card" id="horario-expediente">
+                <h3>Horário de Expediente</h3>
+                <p>Escritórios abrem das 8h00 às 16h00/17h00 com pausa para almoço. Sábados, muitos fecham às 14h00 ou
+                    não abrem.</p>
+            </div>
+
+            <div class="card" id="tempo">
+                <h3>Tempo</h3>
+                <p>Três fusos horários: Ocidental (GMT+7), Central (GMT+8), e Oriental (GMT+9).</p>
+            </div>
+
+            <div class="card" id="eletricidade">
+                <h3>Eletricidade</h3>
+                <p>220 volts/50 ciclos nas grandes cidades; algumas áreas usam 110 volts. Tomadas são de dois pinos
+                    arredondados.</p>
+            </div>
+
+            <div class="card" id="esportes">
+                <h3>Esportes</h3>
+                <p>Incluem corridas de touros, silat (arte marcial), futebol, badminton, e tênis de mesa. Campos de
+                    golfe e atividades aquáticas também são populares.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <p class="a45">&copy; 2024 Consulado da Indonésia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

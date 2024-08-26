@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+
+main, .mapa {
+    margin: 0 150px;}
+
+header {
+    background-color: #ff0000;
+    padding: 10px 80px 10px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.sobre {
+    position: relative;
+}
+
+.sobre a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.aparece {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    z-index: 10;
+}
+
+.aparece a {
+    color: #333;
+    text-decoration: none;
+    padding: 6px;
+    display: block;
+    border-radius: 5px;
+}
+
+.aparece a:hover {
+    background-color: #f0f0f0;
+}
+
+.sobre:hover .aparece {
+    display: block;
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+
+    padding: 10px;
+    justify-content: center;
+}
+
+.mapa {
+    background-color: #eaeaea;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+    border: #333 2px solid;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+img.foto {
+    width: 700px;
+    height: 200px;
+}
+
+.foto {
+    /* height: 200px;
+   width: 300px; */
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.texto {
+    margin: 10px 0;
+    text-align: justify;
+    justify-content: center;
+}
+
+#clima,
+#pixes,
+#rios-lagos,
+#tudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*  */
+
+#rios-lagos {
+    flex-direction: row-reverse;
+}
+
+#clima img,
+#pixes img {
+    margin-right: 30px;
+}
+
+#rios-lagos img {
+    margin-left: 30px;
+}
+
+#tudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tudo section {
+    flex: 1;
+    margin: 0 10px;
+}
+footer {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+}
+
+/*  */
